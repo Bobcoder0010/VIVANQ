@@ -1,22 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #111fbb79;
+    background-color: #bb117d;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+  
 }
 
-.container {
-    background-color: #21c3aa;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(241, 15, 41, 0.1);
-    width: 300px;
-    border-radius: 10px;
-    
-}
 
 h1, h2 {
     text-align: center;
@@ -49,7 +42,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #901c1c;
 }
 
 .hidden {
@@ -69,4 +62,70 @@ button:hover {
     color: #d61d1d;
     text-decoration: none;
 }
+.background-photo {
+    width: 100%;  /* Adjust width as needed */
+    height: 100vh;  /* Adjust height as needed */
+    padding: 20px;  /* Adjust padding as needed */
+    margin: 0 auto;  /* Center the div horizontally */
+    color: white;  /* Text color */
+    font-family: Arial, sans-serif;  /* Font style */
+    text-align: center;  /* Center text */
+    border-radius: 15px;  /* Rounded corners */
+    background-image: url('./images/image.png');  /* Path to your background image */
+    background-size: cover;  /* Cover the entire div */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;  /* Prevent the background image from repeating */
+    position: relative;  /* Required for pseudo-elements */
+    box-shadow: 
+        0 0 5px #0f0,   /* Light green shadow */
+        0 0 10px #0f0,  /* Slightly bigger light green shadow */
+        0 0 20px #0f0,  /* Even bigger light green shadow */
+        0 0 40px #0f0,  /* Bigger light green shadow */
+        0 0 80px #0f0,  /* Bigger light green shadow */
+        0 0 120px #0f0; /* Biggest light green shadow */
+}
 
+.background-photo:before, .background-photo:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 
+        0 0 5px #0f0,
+        0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0,
+        0 0 80px #0f0,
+        0 0 120px #0f0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.background-photo:after {
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    box-shadow: 
+        0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0,
+        0 0 80px #0f0,
+        0 0 160px #0f0,
+        0 0 240px #0f0;
+    opacity: 0.5;
+}
+
+
+.container {
+    background-color: #21c3aa;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(241, 15, 41, 0.1);
+    width: 300px;
+    border-radius: 10px;
+    
+}
