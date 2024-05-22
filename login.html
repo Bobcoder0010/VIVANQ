@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id="log-entry-section" class="section hidden">
+        <h2>Add Log Entry</h2>
+        <form id="log-entry-form">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="student">Student Name:</label>
+            <input type="text" id="student" name="student" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" required></textarea>
+            <button type="submit">Add Entry</button>
+            <button id="cancel-log-entry" type="button">Cancel</button>
+</body>
+</html>

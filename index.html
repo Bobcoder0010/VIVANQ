@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Log Book Management System</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Log Book Management System</h1>
+        <div id="login-section" class="section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit"><a href="login.html">LOGIN</a></button><br>
+                 <a href="https://www.example.com">Forgot Password</a><br>
+                 <a href="https://www.example.com">Create Account</a><br>
+                 
+
+              
+            </form>
+        </div>
+
+        <div id="dashboard-section" class="section hidden">
+            <h2>Dashboard</h2>
+            <div class="dashboard-content">
+                <button id="logout-button">Logout</button>
+                <h3>Welcome, <span id="user-name"></span></h3>
+                <button id="add-log-button">Add Log Entry</button>
+                <div id="log-entries">
+                    <!-- Log entries will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+       
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
