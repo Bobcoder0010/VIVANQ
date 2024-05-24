@@ -9,15 +9,22 @@
     <div id="log-entry-section" class="section hidden">
         <h2>Add Log Entry</h2>
         <form id="log-entry-form">
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            <label for="student">Student Name:</label>
-            <input type="text" id="student" name="student" required>
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-            <label for="details">Details:</label>
-            <textarea id="details" name="details" required></textarea>
-            <button type="submit">Add Entry</button>
-            <button id="cancel-log-entry" type="button">Cancel</button>
+            <label for="date">Date:</label><br><br>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="student">Student Name:</label><br>
+            <input type="text" id="student" name="student" required><br>
+            <label for="subject">Subject:</label><br><br>
+            <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="Operating system">OS (Operating system)</option>
+                <option value="Data Base Management system">DBMS (Data Base Management system)</option>
+                <option value="Software Engineering">SE(Software Engineering)</option>
+                <option value="Scripting Language">SL (Scripting Language)</option>
+                <option value="Numerical Method">NM (Numerical Method)</option>
+            </select><br><br>
+            <label for="details">Details:</label><br><br>
+            <textarea id="details" name="details" required></textarea><br><br>
+            <button type="submit">Add Entry</button><br><br>
+            <button id="cancel-log-entry" type="button">Cancel</button><br><br>
 </body>
 </html>
